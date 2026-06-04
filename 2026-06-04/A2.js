@@ -17,11 +17,13 @@ function Triangle(S1, S2, S3){
 
 Triangle(1,2,3)
 
+
+
 // Finding leap year
 
 function leapYear(Yr){
 
-    if (Yr % 4 == 0){
+    if ((Yr % 4 == 0 && Yr % 100 != 0) || Yr % 400){
         console.log("Leap year")
     }
 
@@ -31,3 +33,14 @@ function leapYear(Yr){
 }
 
 leapYear(2024)
+
+
+
+// BMI calculator
+
+function BMI(Hi, We){
+    bmi= We / (Hi)**2
+    console.log("BMI = "+bmi)
+}
+
+BMI(1.75, 58)
