@@ -1,0 +1,18 @@
+// Judging Triangle 
+
+function Triangle(S1, S2, S3){
+    
+    if (S1 == S2 && S2 == S3){
+        console.log("Equilateral triangle")
+    }
+
+    else if (S1 == S2 || S1 == S3 || S2 == S3){
+        console.log("Isosceles triangle")
+    }
+
+    else {
+        console.log("Scalene triangle")
+    }
+}
+
+Triangle(1,2,3)
