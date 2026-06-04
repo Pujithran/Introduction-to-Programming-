@@ -2,11 +2,11 @@
 
 function Triangle(S1, S2, S3){
     
-    if (S1 == S2 && S2 == S3){
+    if (S1 === S2 && S2 === S3){
         console.log("Equilateral triangle")
     }
 
-    else if (S1 == S2 || S1 == S3 || S2 == S3){
+    else if (S1 === S2 || S1 === S3 || S2 === S3){
         console.log("Isosceles triangle")
     }
 
@@ -16,3 +16,18 @@ function Triangle(S1, S2, S3){
 }
 
 Triangle(1,2,3)
+
+// Finding leap year
+
+function leapYear(Yr){
+
+    if (Yr % 4 == 0){
+        console.log("Leap year")
+    }
+
+    else {
+        console.log("Not Leap Year")
+    }
+}
+
+leapYear(2024)
