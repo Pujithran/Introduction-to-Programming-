@@ -2,17 +2,31 @@ function discount(memeber,coupon,quantity,cap){
 
     let disc=0
 
-    if (memeber=="gold" || memeber=="GOLD" || memeber=="Gold"){
-        disc+=20
+    switch(memeber){
+        case "gold":
+            disc+=20;
+            break;
+
+        case "silver":
+            disc+=10;
+            break;
+
+        default:
+            break;
+
     }
 
-    else if (memeber=="Silver" || memeber=="silver" || memeber=="SILVER"){
-        disc+=10
-    }
+    // if (memeber=="gold" || memeber=="GOLD" || memeber=="Gold"){
+    //     disc+=20
+    // }
 
-    else {
-        disc+=0
-    }
+    // else if (memeber=="Silver" || memeber=="silver" || memeber=="SILVER"){
+    //     disc+=10
+    // }
+
+    // else {
+    //     disc+=0
+    // }
 
     if (coupon=="TRUE" || coupon=="True" || coupon=="true"){
         disc+=8
@@ -38,4 +52,4 @@ function discount(memeber,coupon,quantity,cap){
 
 }
 
-discount("silver","false",20,30)
+discount("gold","true",20,40)
